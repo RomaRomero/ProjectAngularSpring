@@ -1,0 +1,16 @@
+.jumbotron {
+    position: static;
+    bottom: 10px;
+    width: 100;
+    font-size: 0.7em;
+    margin-bottom: 15px;
+    background-color:silver;
+}
+
+.footer {
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    background-color: #222222;
+}
