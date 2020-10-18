@@ -1,0 +1,60 @@
+
+<br>
+<div class="padre">
+    <div>
+        <h1>Crear Cuenta</h1>
+    </div>
+    <form action="/action_page.php">
+    <div [hidden]="submitted" style="width: 400px;">
+        <form (ngSubmit)="onSubmit()">
+            <div class="FormGroup">
+                <label for="name">Nombres completos</label>
+                <input type="text" class="form-control" id="nombres" Validators.required [(ngModel)]="persona.nombres" name="nombres"
+                    placeholder=" Nombres completos..">
+            </div>
+    
+            <div class="form-group">
+                <label for="name">Apellidos </label>
+                <input type="text" class="form-control" id="apellidos" Validators.required [(ngModel)]="persona.apellidos"
+                    name="apellidos" placeholder=" Apellidos completos..">
+            </div>
+            <div class="form-group">
+                <label for="name">Dirección</label>
+                <input type="text" class="form-control" id="direccion" Validators.required [(ngModel)]="persona.direccion"
+                    name="direccion" placeholder=" Dirección..">
+            </div>
+            <div class="form-group">
+                <label for="name">Correo Electronico</label>
+                <input type="text" class="form-control" id="correo" Validators.required [(ngModel)]="persona.correo" name="correo"
+                    placeholder="  direccion ..">
+            </div>
+            <div class="form-group">
+                <label for="name">Telefono</label>
+                <input type="text" class="form-control" id="telefono" Validators.required [(ngModel)]="persona.telefono" name="telefono"
+                    placeholder=" 09989834343..">
+            </div>
+            <button type="menu" class="btn btn-outline-danger" (click)="noSubmit()">Regresar</button>
+            <button type="submit" class="btn btn-outline-success" >Continuar</button>
+           
+        </form>
+    </div>
+    
+    <div [hidden]="!submitted">
+        <div class="alert alert-success">
+            <strong>Informacion Registrada exitosamente!</strong>
+        </div>
+
+        <div class="toast">
+            <div class="toast-header">
+                Toast Header
+            </div>
+            <div class="toast-body">
+                Some text inside the toast body
+            </div>
+        </div>
+        <!-- <h4>You submitted successfully!</h4> -->
+        <button class="btn btn-outline-success" (click)="newPersona()">Add</button>
+    </div>
+    </form>
+</div>
+<br> 

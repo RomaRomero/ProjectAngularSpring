@@ -1,0 +1,30 @@
+<div class="jumbotron text-center"  style="margin-bottom:0">
+    <div class="container">
+        <h1 class="centrado " >Pet Prints</h1>
+    
+    <img src="https://image.flaticon.com/icons/png/512/66/66364.png" height="150" class="img-responsive">
+    <p>¿Se ha perdido tu mascota? ,Con nuestra ayuda puedes encontrarla!</p>
+    </div>
+    
+    
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <button class="fa fa-home" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" routerLink="MenuP"
+        class="nav-link" routerLinkActive="active">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a [routerLink]="['MenuP']" class="nav-link" >Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['Publicaciones']" class="nav-link" >Publicaciones</a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['Acercade']" class="nav-link" >Acerca De ..</a>
+            </li>
+        </ul>
+    </div>
+</nav>

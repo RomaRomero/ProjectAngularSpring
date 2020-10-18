@@ -1,0 +1,41 @@
+<br>
+<div class="padre">
+    <div>
+        <h1>Crear Publicacion</h1>
+    </div>
+    <form action="/action_page.php">
+        <div [hidden]="submitted" style="width: 400px;">
+            <form (ngSubmit)="onSubmit()">
+                <div class="FormGroup">
+                    <label for="name">Nombre de la mascota extraviada :</label>
+                    <input type="text" class="form-control" id="nombremascota" Validators.required
+                        [(ngModel)]="mascota.nombreM" name="nombremascota" placeholder=" Nombre mascota..">
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Descripcion de la mascota : </label>
+                    <input type="text" class="form-control" id="descripcion" Validators.required
+                        [(ngModel)]="mascota.descripcion" name="descripcion" placeholder=" example : extraviada en el sector mall del rio..">
+                </div>
+                <div class="form-group">
+                    <label for="name">Imagen</label>
+                    <input type="text" class="form-control" id="imagen" Validators.required
+                        [(ngModel)]="mascota.imagen" name="imagen" placeholder=" añadir direccion url de la imagen de su mascota..">
+                </div>
+             
+                <button type="return"  class="btn btn-outline-danger">Regresar</button>
+                <button type="submit" class="btn btn-outline-success">Continuar</button>
+
+            </form>
+        </div>
+
+        <div [hidden]="!submitted">
+            <div class="alert alert-success">
+                <strong>Informacion Registrada exitosamente!</strong>
+            </div>
+            <!-- <h4>You submitted successfully!</h4> -->
+            <button class="btn btn-outline-success" (click)="newMascota()">Add</button>
+        </div>
+    </form>
+</div>
+<br>

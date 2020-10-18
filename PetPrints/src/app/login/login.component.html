@@ -1,0 +1,13 @@
+
+<div class="padre">
+    <form action="/action_page.php">
+        <label for="fname">Usuario/Email :</label>
+        <input type="text" name="username" [(ngModel)]="username" placeholder=" Nombre de usuario..">
+       <label for="lname">Contraseña :</label>
+        <input type="password" name="password" [(ngModel)]="password" class="form-control"  placeholder="Contraseña..">
+
+       <input type="submit" value="Ingresar" (click)=checkLogin() class="btn btn-outline-success">
+       
+    </form>
+</div>
+<br>
