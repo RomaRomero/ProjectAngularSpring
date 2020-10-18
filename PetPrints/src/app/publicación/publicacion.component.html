@@ -1,0 +1,16 @@
+<br>
+<h1 class="animated fadeIn">{{publicacion.nombrep | uppercase}}</h1>
+<br>
+<div class="row animated fadeIn fast">
+    <div class="col-md-4">
+        <img [src]="publicacion.imagen" class="img-fluid" [alt]="publicacion.nombrep">
+        <br>
+        <br>
+        <a [routerLink]="['/Publicaciones']" class="btn btn-outline-danger btn-block">Regresar</a>
+    </div>
+    <div class="col-md-8">
+        <h3>{{publicacion.nombrep}}</h3><small style="color:red">{{publicacion.descripcion}}</small>
+    <br>
+    <p>este es el detalle</p>
+    </div>
+</div>
