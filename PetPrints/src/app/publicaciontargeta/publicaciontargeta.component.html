@@ -1,0 +1,14 @@
+<br>
+<div class="card">
+    <div>
+        <div  class="card-img-overlay" style="height:2rem;">
+        <h5 class="card-title">Dueño :{{publicacion.nombrep}}</h5>
+    </div>
+    </div>
+    <img src={{publicacion.imagen}} class="card-img-top" height="250" alt="{{publicacion.imagen}}">
+    <div class="card-body">
+        <h5 class="card-title"> Mascota :{{publicacion.nombrem}}</h5>
+        <p class="card-text">Informacion :{{publicacion.descripcion}}</p>
+    <button (click)="verPublicacion()" type="button" class="btn btn-outline-primary btn-black">Ver mas</button>
+    </div>
+</div>
